@@ -1,0 +1,55 @@
+.grid-container {
+    width: 1000px;
+    display: grid;
+    grid-template-columns: 
+    100px 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header"
+    "main main empty sidebar"
+    "footer footer footer footer";
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+.area-h {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(32, 30, 30);
+    color:white;
+    height: 50px;
+    grid-area: header;
+}
+.area-m {
+    border:1px solid;
+    background-color: rgb(32, 30, 30);
+    color: aliceblue;
+    border-radius: 15px;
+    grid-area: main;
+    height: 50px;
+    width: 60px;
+}
+.area-e{
+    border:1px solid;
+    background-color: rgb(32, 30, 30);
+    color: aliceblue;
+    border-radius: 15px;
+    grid-area:empty;
+    height: 50px;
+    width: 100px;
+}
+.area-s {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(32,30,30);
+    color:aliceblue;
+    grid-area: sidebar;
+    height: 50px;
+}
+.area-f {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: rgb(32,30,30);
+    color:white;
+    grid-area: footer;
+    height: 50px;
+}
